@@ -44,6 +44,9 @@ const Dashboard = () => {
       <Box
         height="62.5vh"
         sx={{
+          "& .MuiDataGrid-columnHeaderTitle": {
+            fontSize: "1rem",
+          },
           "& .MuiDataGrid-cell": {
             borderBottom: "none",
           },
@@ -69,6 +72,11 @@ const Dashboard = () => {
           columns={columns}
           pageSize={10}
           rowsPerPageOptions={[10, 20, 50, 100]}
+          sx={{
+            "& .MuiDataGrid-cellContent": {
+              fontSize: "1rem",
+            },
+          }}
         />
       </Box>
     </Box>
